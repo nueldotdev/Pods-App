@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between'
 	},
 
-	title: { 
-		fontSize: 30, 
-		fontWeight: 'bold', 
+	title: {
+		fontSize: 30,
+		fontWeight: 'bold',
 		color: 'white',
 	},
 
@@ -35,35 +35,54 @@ const styles = StyleSheet.create({
 	},
 
 	horizontalContainer: {
-    paddingVertical: 10,
-    paddingHorizontal: 10,
-    borderBottomColor: '#eee',
-    // marginBottom: 0,
-  },
-  card: {
-    width: 170,
-    height: 170,
-    backgroundColor: 'rgba(23, 23, 23, 0.3)',
+		paddingVertical: 10,
+		paddingHorizontal: 10,
+		borderBottomColor: '#eee',
+		// marginBottom: 0,
+	},
+	card: {
+		width: 170,
+		height: 170,
 		borderWidth: 2,
-		borderColor: 'rgba(48, 48, 48, 0.61)',
-    borderRadius: 7,
-    marginRight: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  cardText: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-  sectionHeader: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    paddingHorizontal: 15,
-    marginTop: 15,
+		borderColor: 'rgba(68, 68, 68, 0.61)',
+		borderRadius: 7,
+		marginRight: 10,
+		justifyContent: 'center',
+		alignItems: 'center'
+	},
+
+	cardLayout: {
+		width: 170,
+		height: 170,
+		borderRadius: 7,
+		marginRight: 10,
+		overflow: 'hidden',
+		borderWidth: 2,
+		borderColor: 'rgba(68, 68, 68, 0.61)',
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: 'rgba(90, 92, 3, 0.27)',
+	},
+
+	blurCardOverlay: {
+		...StyleSheet.absoluteFillObject, // Fill the parent View container entirely
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	cardText: {
+		color: '#fff',
+		fontWeight: 'bold',
+		marginTop: 10
+	},
+	sectionHeader: {
+		fontSize: 16,
+		fontWeight: 'bold',
+		paddingHorizontal: 15,
+		marginTop: 15,
 		color: 'rgb(48, 48, 48)',
-  },
-  listItem: {
-    padding: 20,
+	},
+	listItem: {
+		padding: 20,
 		borderRadius: 10,
 		marginHorizontal: 10,
 		marginVertical: 5,
@@ -71,7 +90,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		flexDirection: 'row'
-  },
+	},
 	likedItem: {
 		// padding: 5,
 		// width: 100,

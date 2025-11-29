@@ -15,6 +15,7 @@ import { useColorScheme } from '@/hooks/use-color-scheme';
 import HomeScreen from './index';
 import PodsScreen from './pods';
 import FavoritesScreen from './favorites';
+import Search from './search';
 
 type TabConfig = {
   key: string;
@@ -27,6 +28,7 @@ type TabConfig = {
 const TAB_CONFIG: TabConfig[] = [
   { key: 'home', title: 'Home', icon: 'home', href: '/', Component: HomeScreen },
   { key: 'pods', title: 'Pods', icon: 'file-directory', href: '/pods', Component: PodsScreen },
+  { key: 'search', title: 'Search', icon: 'search', href: '/search', Component: Search },
   { key: 'favorites', title: 'Favorites', icon: 'star', href: '/favorites', Component: FavoritesScreen },
 ];
 

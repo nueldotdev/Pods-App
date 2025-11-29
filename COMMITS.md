@@ -1,5 +1,33 @@
 ## 2025-11-29
 
+feat: Implement Search tab and introduce blurred UI cards
+
+This commit introduces a new 'Search' tab and significantly revamps the visual design of content cards across the application, leveraging blur effects and new visual assets.
+
+Changes include:
+
+- **New Search Tab:**
+    - Adds a dedicated 'Search' tab to the main application navigation (`app/(tabs)/_layout.tsx`).
+    - Introduces the new `app/(tabs)/search.tsx` component, ready for search functionality.
+
+- **Enhanced UI with Blurred Cards:**
+    - Overhauls the visual presentation of content cards on both the 'Home' (`app/(tabs)/index.tsx`) and 'Pods' (`app/(tabs)/pods.tsx`) screens.
+    - Integrates `expo-blur` to apply modern blur effects to UI cards, enhancing visual depth and modernity.
+    - Incorporates new image assets (e.g., `assets/images/download.png`, `assets/images/icons8-folder-32.png`, `assets/images/icons8-folder-48.png`) into the card designs.
+    - Refactors the 'Pods' screen to display content in an appealing two-column grid format using the new card design.
+    - Updates the horizontal list on the 'Home' screen to utilize the new blurred card layout.
+
+- **Styling and Dependencies:**
+    - Introduces new styles (`cardLayout`, `blurCardOverlay`) and refines existing styles (`card`, `sectionHeader`, `cardText`) in `styles/primary.tsx` to accommodate the new visual design.
+    - Adds `expo-blur` as a new project dependency (`package.json`, `bun.lock`).
+
+- **Minor Improvements:**
+    - Adjusts the `RNStatusBar` to be translucent in `app/_layout.tsx` for a more cohesive full-screen UI experience.
+    - Refines `MainListData` titles in `index.tsx` and `pods.tsx` for improved display.
+
+
+## 2025-11-29
+
 feat: Implement custom tab navigation and redesign home screen
 
 This commit significantly overhauls the application's core navigation and user interface, transitioning from the default Expo Router tab setup to a custom implementation.

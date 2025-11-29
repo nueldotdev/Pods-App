@@ -31,7 +31,7 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" translucent={false} />
-      <RNStatusBar backgroundColor={Colors[colorScheme ?? 'light'].background} translucent={false} />
+      <RNStatusBar backgroundColor={Colors[colorScheme ?? 'light'].background} translucent={true} />
     </ThemeProvider>
   );
 }
